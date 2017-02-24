@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title> Photography Website </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="header">
+    	<h1>Photography Website</h1>
+    </div>
+    <div class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html" style="text-decoration:none">Home</a></li>
+        <li><a href="about.html" style="text-decoration:none">About Me</a></li>
+        <li><a href="portrait.html" style="text-decoration:none">Portraits</a></li>
+		<li><a href="landscape.html" style="text-decoration:none"> Landscape </a></li>
+		<li><a href='finearts.html' style="text-decoration:none"> Fine Arts</a><//li>
+		<li><a href='street.html' style="text-decoration:none"> Street Photography </a></li>
+		<li><a href='wildlife.html' style="text-decoration:none"> WildLife </a></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="icons">
+    <div class="icon">
+		<ul><a href='Your Facebook Page Link'>
+			<img src="src\icon\facebook.png" alt="" />
+		</a></ul>
+		<ul><a href='Your Twitter Profile Link'>
+			<img src="src\icon\twitter.png" alt="" />
+		</a></ul>
+		<ul><a href='Your Instagram Profile Link'>
+			<img src="src\icon\instagram.png" alt="" />
+		</a></ul>
+		<ul><a href ='Your 500px Profile Link'>
+			<img src="src\icon\500px.png" alt="" />
+		</a></ul>
+	</div>
+</div>
+
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+		<img src="src/img/landscape/1.jpg" data-full="src/img/landscape/1.jpg" class="m-p-g__thumbs-img" />
+		<img src="src/img/landscape/2.jpg" data-full="src/img/landscape/2.jpg" class="m-p-g__thumbs-img" />
+		<img src="src/img/landscape/3.jpg" data-full="src/img/landscape/3.jpg" class="m-p-g__thumbs-img" />
+		<img src="src/img/landscape/4.jpg" data-full="src/img/landscape/4.jpg" class="m-p-g__thumbs-img" />
+		<img src="src/img/landscape/5.jpg" data-full="src/img/landscape/5.jpg" class="m-p-g__thumbs-img" />
+	</div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+
+  
+</body>
+</html>
